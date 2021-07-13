@@ -14,7 +14,6 @@ void ShowErrorMessage(string message)
 
 int main()
 {
-	cout << "abc";
 	WSADATA wsaData;
 	SOCKET clientSocket;
 	SOCKADDR_IN serverAddress;
