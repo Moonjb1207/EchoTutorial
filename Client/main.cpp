@@ -34,7 +34,7 @@ int main()
 	serverAddress.sin_family = AF_INET;
 	serverAddress.sin_addr.s_addr = inet_addr("127.0.0.1");
 	serverAddress.sin_port = htons(serverPort);
-	if (connect(clientSocket, (SOCKADDR*)&serverAddress, sizeof(serverAddress)) == SOCKET_ERROR);
+	if (connect(clientSocket, (SOCKADDR*)&serverAddress, sizeof(serverAddress)) == SOCKET_ERROR)
 		ShowErrorMessage("connect()");
 	cout << "[present] connect()\n";
 	
